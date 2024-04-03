@@ -123,6 +123,8 @@ export class MatPaginatorModule {
 
 // @public
 export interface MatPaginatorSelectConfig {
+  /** @deprecated Select doesn't provide the option centering  anymore. It shows the dropdown either below or above the trigger.
+   */
     disableOptionCentering?: boolean;
     panelClass?: string | string[] | Set<string> | {
         [key: string]: any;

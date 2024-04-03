@@ -35,7 +35,9 @@ const DEFAULT_PAGE_SIZE = 50;
 
 /** Object that can used to configure the underlying `MatSelect` inside a `MatPaginator`. */
 export interface MatPaginatorSelectConfig {
-  /** Whether to center the active option over the trigger. */
+  /** Whether to center the active option over the trigger.
+   * @deprecated paginator's select doesn't provide the option centering  anymore. It shows the dropdown either below or above the trigger.
+   */
   disableOptionCentering?: boolean;
 
   /** Classes to be passed to the select panel. */

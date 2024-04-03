@@ -123,7 +123,9 @@ export function MAT_SELECT_SCROLL_STRATEGY_PROVIDER_FACTORY(
 
 /** Object that can be used to configure the default options for the select module. */
 export interface MatSelectConfig {
-  /** Whether option centering should be disabled. */
+  /** Whether option centering should be disabled.
+   * @deprecated Select doesn't provide the option centering  anymore. It shows the dropdown either below or above the trigger.
+   */
   disableOptionCentering?: boolean;
 
   /** Time to wait in milliseconds after the last keystroke before moving focus to an item. */
@@ -451,7 +453,9 @@ export class MatSelect
   }
   private _multiple: boolean = false;
 
-  /** Whether to center the active option over the trigger. */
+  /** Whether to center the active option over the trigger.
+   * @deprecated Select doesn't provide the option centering  anymore. It shows the dropdown either below or above the trigger.
+   */
   @Input({transform: booleanAttribute})
   disableOptionCentering = this._defaultOptions?.disableOptionCentering ?? false;
 
